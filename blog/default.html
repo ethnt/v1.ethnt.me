@@ -1,0 +1,13 @@
+{% capture content %}
+	<article>
+		<header>
+			<h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
+		</header>
+		{{ current.body }}
+		<footer>
+			<p class="meta">{{ current.date | date: '%B %d, %Y' }}</p>
+		</footer>
+	</article>
+{% endcapture %}
+
+{% include 'layouts/blog' %}

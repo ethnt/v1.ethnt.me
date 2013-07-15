@@ -1,0 +1,13 @@
+{% assign articles = posts %}
+{% assign article = posts.first %}
+{% assign current = posts.first %}
+
+{% capture content %}
+	<div class="page blog">
+		<div class="inner">
+			{{ content }}
+		</div>
+	</div>
+{% endcapture %}
+
+{% include 'layouts/default' %}

@@ -14,7 +14,7 @@
 		<link rel="icon" type="image/png" href="/img/favicon.png">
 		<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
 
-		<link type="application/rss+xml" rel="alternate" title="{{ site.title }}" href="{{ site.meta.feed_url }}">
+		<link type="application/rss+xml" rel="alternate" title="{{ site.title }}" href="{{ site.feed_url }}">
 
 		<link href="/css/application.css" rel="stylesheet">
 
@@ -49,6 +49,7 @@
 					</section>
 					<nav>
 						<ul>
+							<li><a href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>
 							<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>
 							<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>
 							<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>

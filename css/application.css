@@ -571,17 +571,67 @@ strong {
   *margin-left: -1em;
   display: inline;
 }
+/* line 165, src/application.scss */
+#main .page.blog {
+  *zoom: 1;
+  max-width: 47em;
+  _width: 47em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em auto;
+}
+/* line 38, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#main .page.blog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 170, src/application.scss */
+#main .page.blog .inner {
+  width: 74.46809%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+  padding-right: 25.53191%;
+}
+/* line 175, src/application.scss */
+#main .page.blog h2 {
+  font-size: 1.5em;
+}
+/* line 180, src/application.scss */
+#main .page.blog article header {
+  margin-bottom: 1.75em;
+}
+/* line 184, src/application.scss */
+#main .page.blog article footer {
+  margin-top: 1.75em;
+}
+/* line 187, src/application.scss */
+#main .page.blog article footer p.meta {
+  color: #cbcbcb;
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* line 194, src/application.scss */
+#main .page.blog article + article {
+  border-top: 1px solid #f1f1f1;
+  margin-top: 4em;
+  padding-top: 4em;
+}
 
 /*
 	V. Footer
 */
-/* line 171, src/application.scss */
+/* line 208, src/application.scss */
 #contain > footer {
   border-top: 1px solid #f1f1f1;
   padding: 2em 0 4em;
   margin-top: 4em;
 }
-/* line 176, src/application.scss */
+/* line 213, src/application.scss */
 #contain > footer .inner {
   *zoom: 1;
   max-width: 47em;
@@ -597,14 +647,14 @@ strong {
   display: table;
   clear: both;
 }
-/* line 179, src/application.scss */
+/* line 216, src/application.scss */
 #contain > footer .inner section {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 183, src/application.scss */
+/* line 220, src/application.scss */
 #contain > footer .inner nav {
   width: 48.93617%;
   float: right;
@@ -613,32 +663,32 @@ strong {
   display: inline;
   font-size: 1.25em;
 }
-/* line 188, src/application.scss */
+/* line 225, src/application.scss */
 #contain > footer .inner nav a {
   border: none;
 }
-/* line 192, src/application.scss */
+/* line 229, src/application.scss */
 #contain > footer .inner nav ul {
   float: right;
 }
-/* line 195, src/application.scss */
+/* line 232, src/application.scss */
 #contain > footer .inner nav ul li {
   display: inline-block;
 }
-/* line 198, src/application.scss */
+/* line 235, src/application.scss */
 #contain > footer .inner nav ul li + li {
   margin-left: 0.25em;
   margin-top: 0;
 }
-/* line 206, src/application.scss */
+/* line 243, src/application.scss */
 #contain > footer .inner p {
   font-size: 0.9em;
 }
-/* line 209, src/application.scss */
+/* line 246, src/application.scss */
 #contain > footer .inner p span {
   color: #cbcbcb;
 }
-/* line 212, src/application.scss */
+/* line 249, src/application.scss */
 #contain > footer .inner p span a {
   color: #cbcbcb;
 }

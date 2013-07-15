@@ -161,6 +161,43 @@ strong {
 			@include span-columns(9 omega, 12);
 		}
 	}
+
+	.page.blog {
+		@include container;
+
+		margin: 2em auto;
+
+		.inner {
+			@include span-columns(9 omega, 12);
+			@include suffix(3);
+		}
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+		article {
+			header {
+				margin-bottom: 1.75em;
+			}
+
+			footer {
+				margin-top: 1.75em;
+
+				p.meta {
+					color: $dark-grey;
+					font-size: 0.9em;
+					font-style: italic;
+				}
+			}
+
+			& + article {
+				border-top: 1px solid $grey;
+				margin-top: 4em;
+				padding-top: 4em;
+			}
+		}
+	}
 }
 
 
