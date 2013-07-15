@@ -10,6 +10,7 @@ _Note: This theme does not support blogs quite yet._
 
 - Full blogging support (tags, archives, pagination, etc)
 - Fix Symbolset webfonts (broken when I added them to `.gitignore`)
+- Make it responsive
 
 ## Usage
 
