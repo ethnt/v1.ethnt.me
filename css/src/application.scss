@@ -176,6 +176,33 @@ strong {
 	.inner {
 		@include container;
 
+		section {
+			@include span-columns(6, 12);
+		}
+
+		nav {
+			@include span-columns(6 omega, 12);
+
+			font-size: 1.25em;
+
+			a {
+				border: none;
+			}
+
+			ul {
+				float: right;
+
+				li {
+					display: inline-block;
+
+					& + li {
+						margin-left: 0.25em;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
 		p {
 			font-size: 0.9em;
 
