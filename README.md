@@ -6,6 +6,11 @@ This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it
 
 _Note: This theme does not support blogs quite yet._
 
+## To-Do
+
+- Full blogging support (tags, archives, pagination, etc)
+- Fix Symbolset webfonts (broken when I added them to `.gitignore`)
+
 ## Usage
 
 First, you need a copy of this repository. Then, install the dependencies.
