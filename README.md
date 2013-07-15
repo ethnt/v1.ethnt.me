@@ -4,6 +4,8 @@
 
 This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
+_Note: This theme does not support blogs quite yet._
+
 ## Usage
 
 First, you need a copy of this repository. Then, install the dependencies.
@@ -38,7 +40,7 @@ There are several pieces of metadata that you can add to the site to configure t
 
 Key            | Description
 ---------------|------
-`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses Futura PT and FF Tisa Web Pro.
+`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Futura PT](https://typekit.com/fonts/futura-pt) and [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro).
 `analytics_id` | Your Google Analytics ID.
 `twitter`      | Your Twitter username.
 `github`       | Your GitHub username.
