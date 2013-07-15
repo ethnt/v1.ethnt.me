@@ -1,0 +1,293 @@
+/*
+	Ethan Turkeltaub
+		file: css/src/application.scss
+*/
+/* line 17, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+	= Appendix
+		I. Media Queries
+		II.
+*/
+/*
+	I. Media Queries
+*/
+@media handheld, only screen and (max-width: 767px) {
+  /* Handheld devices. */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPhone 4 */
+}
+/*
+	II. Universal
+*/
+/* line 33, src/application.scss */
+body {
+  background: #fefefe;
+  color: #333333;
+  font: 400 16px/1.75em "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, Times New Roman, Times, serif;
+}
+
+/* line 39, src/application.scss */
+a {
+  border-bottom: 1px solid #cbcbcb;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 44, src/application.scss */
+a:hover {
+  color: #58d1a5;
+}
+
+/* line 49, src/application.scss */
+em {
+  font-style: italic;
+}
+
+/* line 54, src/application.scss */
+figure a {
+  border: none;
+}
+/* line 58, src/application.scss */
+figure figcaption {
+  color: #cbcbcb;
+  font-style: italic;
+}
+
+/* line 64, src/application.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "futura-pt-1", "futura-pt-2", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 70, src/application.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 75, src/application.scss */
+li p + p {
+  margin: 0;
+}
+/* line 79, src/application.scss */
+li + li {
+  margin-top: 1.25em;
+}
+
+/* line 84, src/application.scss */
+p + p {
+  margin-top: 1.75em;
+}
+
+/* line 88, src/application.scss */
+strong {
+  font-weight: bold;
+}
+
+/*
+	III. Header
+*/
+/* line 97, src/application.scss */
+#contain > header {
+  background: #f1f1f1;
+  padding: 1em 0;
+}
+/* line 101, src/application.scss */
+#contain > header .inner {
+  *zoom: 1;
+  max-width: 47em;
+  _width: 47em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#contain > header .inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 105, src/application.scss */
+#contain > header a {
+  border: none;
+}
+/* line 109, src/application.scss */
+#contain > header aside {
+  width: 31.91489%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 113, src/application.scss */
+#contain > header nav {
+  width: 65.95745%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+  font-size: 0.9em;
+}
+/* line 118, src/application.scss */
+#contain > header nav ul {
+  float: right;
+}
+/* line 121, src/application.scss */
+#contain > header nav ul li {
+  display: inline-block;
+}
+/* line 124, src/application.scss */
+#contain > header nav ul li + li {
+  margin-top: 0;
+  padding-left: 1.25em;
+}
+
+/*
+	IV. Main
+*/
+/* line 139, src/application.scss */
+#main .page .section {
+  *zoom: 1;
+  max-width: 47em;
+  _width: 47em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2em auto;
+}
+/* line 38, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#main .page .section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 144, src/application.scss */
+#main .page .section aside {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 147, src/application.scss */
+#main .page .section aside figure img {
+  max-width: 75%;
+}
+/* line 151, src/application.scss */
+#main .page .section aside ul li {
+  font-size: 0.9em;
+}
+/* line 154, src/application.scss */
+#main .page .section aside ul li + li {
+  margin-top: 0;
+}
+/* line 160, src/application.scss */
+#main .page .section section {
+  width: 74.46809%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+
+/*
+	V. Footer
+*/
+/* line 171, src/application.scss */
+#contain > footer {
+  border-top: 1px solid #f1f1f1;
+  padding: 2em 0 4em;
+  margin-top: 4em;
+}
+/* line 176, src/application.scss */
+#contain > footer .inner {
+  *zoom: 1;
+  max-width: 47em;
+  _width: 47em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../.rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#contain > footer .inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 179, src/application.scss */
+#contain > footer .inner p {
+  font-size: 0.9em;
+}
+/* line 182, src/application.scss */
+#contain > footer .inner p span {
+  color: #cbcbcb;
+}
+/* line 185, src/application.scss */
+#contain > footer .inner p span a {
+  color: #cbcbcb;
+}

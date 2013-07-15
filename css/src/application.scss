@@ -1,0 +1,191 @@
+/*
+	Ethan Turkeltaub
+		file: css/src/application.scss
+*/
+
+@import "lib/base";
+
+
+/*
+	= Appendix
+		I. Media Queries
+		II.
+*/
+
+
+/*
+	I. Media Queries
+*/
+
+@media handheld, only screen and (max-width: 767px) { /* Handheld devices. */
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { /* iPhone 4 */
+
+}
+
+
+/*
+	II. Universal
+*/
+
+body {
+	background: $base;
+	color: $text;
+	font: 400 16px/1.75em $serif;
+}
+
+a {
+	border-bottom: 1px solid $dark-grey;
+	color: $text;
+	text-decoration: none;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+figure {
+	a {
+		border: none;
+	}
+
+	figcaption {
+		color: $dark-grey;
+		font-style: italic;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+}
+
+li {
+	p + p {
+		margin: 0;
+	}
+
+	& + li {
+		margin-top: 1.25em;
+	}
+}
+
+p + p {
+	margin-top: 1.75em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+/*
+	III. Header
+*/
+
+#contain > header {
+	background: $grey;
+	padding: 1em 0;
+
+	.inner {
+		@include container;
+	}
+
+	a {
+		border: none;
+	}
+
+	aside {
+		@include span-columns(4, 12);
+	}
+
+	nav {
+		@include span-columns(8 omega, 12);
+
+		font-size: 0.9em;
+
+		ul {
+			float: right;
+
+			li {
+				display: inline-block;
+
+				& + li {
+					margin-top: 0;
+					padding-left: 1.25em;
+				}
+			}
+		}
+	}
+}
+
+
+/*
+	IV. Main
+*/
+
+#main {
+	.page .section {
+		@include container;
+
+		margin: 2em auto;
+
+		aside {
+			@include span-columns(3, 12);
+
+			figure img {
+				max-width: 75%;
+			}
+
+			ul li {
+				font-size: 0.9em;
+
+				& + li {
+					margin-top: 0;
+				}
+			}
+		}
+
+		section {
+			@include span-columns(9 omega, 12);
+		}
+	}
+}
+
+
+/*
+	V. Footer
+*/
+
+#contain > footer {
+	border-top: 1px solid $grey;
+	padding: 2em 0 4em;
+	margin-top: 4em;
+
+	.inner {
+		@include container;
+
+		p {
+			font-size: 0.9em;
+
+			span {
+				color: $dark-grey;
+
+				a {
+					color: $dark-grey;
+				}
+			}
+		}
+	}
+}

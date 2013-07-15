@@ -19,9 +19,6 @@
 		<link href="/css/application.css" rel="stylesheet">
 
 		{% include "includes/typekit" %}
-
-		<!--<script type="text/javascript" src="//use.typekit.net/lux8yqy.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 	</head>
 	<body>
 		<div id="contain">
@@ -33,7 +30,9 @@
 					<nav>
 						<ul>
 							{% for page in site.pages %}
+							{% unless page.title == 'Index' %}
 							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+							{% endunless %}
 							{% endfor %}
 						</ul>
 					</nav>
@@ -49,17 +48,19 @@
 						<p><span>Source code for this site is available <a href="https://github.com/eturk/ethnt.me">on GitHub</a>.</span></p>
 					</section>
 					<nav>
-						<ul>
+						<!-- <ul>
 							<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>
 							<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>
 							<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>
 							<li><a href="http://instagram.com/{{ site.meta.instagram }}"><i class="ss-icon">instagram</i></a></li>
 							<li><a href="http://rdio.com/people/{{ site.meta.rdio }}"><i class="ss-icon">rdio</i></a></li>
-						</ul>
+						</ul> -->
 					</nav>
 				</div>
 			</footer>
 		</div>
+		<script src="/jsc/lib/vendor/jquery.js"></script>
+		<script src="/jsc/lib/vendor/ss-social.js"></script>
 		<script src="/jsc/application.js"></script>
 		{% include "includes/analytics" %}
 	</body>
