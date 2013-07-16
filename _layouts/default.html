@@ -49,12 +49,12 @@
 					</section>
 					<nav>
 						<ul>
-							<li><a href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>
-							<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>
-							<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>
-							<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>
-							<li><a href="http://instagram.com/{{ site.meta.instagram }}"><i class="ss-icon">instagram</i></a></li>
-							<li><a href="http://rdio.com/people/{{ site.meta.rdio }}"><i class="ss-icon">rdio</i></a></li>
+							{% if site.feed_url %}<li><a href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>{% endif %}
+							{% if site.meta.twitter %}<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>{% endif %}
+							{% if site.meta.github %}<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>{% endif %}
+							{% if site.meta.dribbble %}<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>{% endif %}
+							{% if site.meta.instagram %}<li><a href="http://instagram.com/{{ site.meta.instagram }}"><i class="ss-icon">instagram</i></a></li>{% endif %}
+							{% if site.meta.rdio %}<li><a href="http://rdio.com/people/{{ site.meta.rdio }}"><i class="ss-icon">rdio</i></a></li>{% endif %}
 						</ul>
 					</nav>
 				</div>
