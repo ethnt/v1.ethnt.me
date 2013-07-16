@@ -1,6 +1,6 @@
 {% capture content %}
 	<header>
-		<h3>{{ title }}</h3>
+		<h3>Posts with <span>#{{ title }}</span> in {{ parent.parent.title }}</h3>
 	</header>
 	{% for post in posts %}
 	<article>

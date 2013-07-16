@@ -1,11 +1,19 @@
 {% capture content %}
+	<header>
+		<h3>{{ parent.title }}</h3>
+	</header>
 	<article>
 		<header>
 			<h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
 		</header>
 		{{ current.body }}
 		<footer>
-			<p class="meta">{{ current.date | date: '%B %d, %Y' }}</p>
+			<p>{{ current.date | date: '%B %d, %Y' }}</p>
+			<ul>
+				{% for tag in taxonomy.tags %}
+				<li><a href="{{ tag.url }}">#{{ tag.value }}</a></li>
+				{% endfor %}
+			</ul>
 		</footer>
 	</article>
 {% endcapture %}

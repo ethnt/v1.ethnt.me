@@ -598,24 +598,40 @@ strong {
   padding-right: 25.53191%;
 }
 /* line 175, src/application.scss */
+#main .page.blog .inner > header {
+  border-bottom: 1px solid #f1f1f1;
+  font-style: italic;
+  margin-bottom: 3em;
+  padding-bottom: 0.5em;
+}
+/* line 181, src/application.scss */
+#main .page.blog .inner > header span {
+  font-style: normal;
+}
+/* line 186, src/application.scss */
 #main .page.blog h2 {
   font-size: 1.5em;
 }
-/* line 180, src/application.scss */
+/* line 191, src/application.scss */
 #main .page.blog article header {
   margin-bottom: 1.75em;
 }
-/* line 184, src/application.scss */
+/* line 195, src/application.scss */
 #main .page.blog article footer {
-  margin-top: 1.75em;
-}
-/* line 187, src/application.scss */
-#main .page.blog article footer p.meta {
   color: #cbcbcb;
   font-size: 0.9em;
   font-style: italic;
+  margin-top: 1.75em;
 }
-/* line 194, src/application.scss */
+/* line 201, src/application.scss */
+#main .page.blog article footer ul li {
+  display: inline-block;
+}
+/* line 204, src/application.scss */
+#main .page.blog article footer ul li + li {
+  margin-top: 0;
+}
+/* line 210, src/application.scss */
 #main .page.blog article + article {
   border-top: 1px solid #f1f1f1;
   margin-top: 4em;
@@ -625,13 +641,13 @@ strong {
 /*
 	V. Footer
 */
-/* line 208, src/application.scss */
+/* line 224, src/application.scss */
 #contain > footer {
   border-top: 1px solid #f1f1f1;
   padding: 2em 0 4em;
   margin-top: 4em;
 }
-/* line 213, src/application.scss */
+/* line 229, src/application.scss */
 #contain > footer .inner {
   *zoom: 1;
   max-width: 47em;
@@ -647,14 +663,14 @@ strong {
   display: table;
   clear: both;
 }
-/* line 216, src/application.scss */
+/* line 232, src/application.scss */
 #contain > footer .inner section {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 220, src/application.scss */
+/* line 236, src/application.scss */
 #contain > footer .inner nav {
   width: 48.93617%;
   float: right;
@@ -663,32 +679,32 @@ strong {
   display: inline;
   font-size: 1.25em;
 }
-/* line 225, src/application.scss */
+/* line 241, src/application.scss */
 #contain > footer .inner nav a {
   border: none;
 }
-/* line 229, src/application.scss */
+/* line 245, src/application.scss */
 #contain > footer .inner nav ul {
   float: right;
 }
-/* line 232, src/application.scss */
+/* line 248, src/application.scss */
 #contain > footer .inner nav ul li {
   display: inline-block;
 }
-/* line 235, src/application.scss */
+/* line 251, src/application.scss */
 #contain > footer .inner nav ul li + li {
   margin-left: 0.25em;
   margin-top: 0;
 }
-/* line 243, src/application.scss */
+/* line 259, src/application.scss */
 #contain > footer .inner p {
   font-size: 0.9em;
 }
-/* line 246, src/application.scss */
+/* line 262, src/application.scss */
 #contain > footer .inner p span {
   color: #cbcbcb;
 }
-/* line 249, src/application.scss */
+/* line 265, src/application.scss */
 #contain > footer .inner p span a {
   color: #cbcbcb;
 }

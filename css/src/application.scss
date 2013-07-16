@@ -172,6 +172,17 @@ strong {
 			@include suffix(3);
 		}
 
+		.inner > header {
+			border-bottom: 1px solid $grey;
+			font-style: italic;
+			margin-bottom: 3em;
+			padding-bottom: 0.5em;
+
+			span {
+				font-style: normal;
+			}
+		}
+
 		h2 {
 			font-size: 1.5em;
 		}
@@ -182,12 +193,17 @@ strong {
 			}
 
 			footer {
+				color: $dark-grey;
+				font-size: 0.9em;
+				font-style: italic;
 				margin-top: 1.75em;
 
-				p.meta {
-					color: $dark-grey;
-					font-size: 0.9em;
-					font-style: italic;
+				ul li {
+					display: inline-block;
+
+					& + li {
+						margin-top: 0;
+					}
 				}
 			}
 
