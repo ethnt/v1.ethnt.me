@@ -1,0 +1,14 @@
+<article>
+	<header>
+		<h2><a href="{{ current.url }}">{{ current.title }}</a></h2>
+	</header>
+	{{ current.body }}
+	<footer>
+		<p>{{ current.date | date: '%B %d, %Y' }}</p>
+		<ul>
+			{% for tag in current.taxonomy.tags %}
+			<li><a href="{{ tag.url }}">#{{ tag.value }}</a></li>
+			{% endfor %}
+		</ul>
+	</footer>
+</article>
