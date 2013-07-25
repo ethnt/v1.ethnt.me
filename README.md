@@ -4,11 +4,9 @@
 
 This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
-_Note: This theme does not support blogs quite yet._
-
 ## To-Do
 
-- Full blogging support (tags, archives, pagination, etc)
+- Pagination in blogs
 - Fix Symbolset webfonts (broken when I added them to `.gitignore`)
 - Make it responsive
 
@@ -53,6 +51,23 @@ Key            | Description
 `dribbble`     | Your Dribbble username.
 `instagram`    | Your Instagram username.
 `rdio`         | Your Rdio username.
+
+### Symbolset Icons
+
+This theme uses the [Symbolset Social Cirlce kit](http://symbolset.com/icons/social-circle). For licensing reasons, the icons aren't included in version control. To use the set, download the kit, and extract the webfont files to `webfonts/ss-social-circle`. Here's what the tree should look like:
+
+```
+webfonts/
+└── ss-social-circle
+    ├── ss-social-circle.css
+    ├── ss-social-circle.eot
+    ├── ss-social-circle.svg
+    ├── ss-social-circle.ttf
+    ├── ss-social-circle.woff
+    └── ss-social.js
+```
+
+If you _don't_ want to use the icons and just use plain-text for the social links, remove the references to the CSS in the `<head>` tag of `_layouts/default.html` and the JavaScript in the bottom portion of the `<body>` tag in `_layouts/default.html`. This will be made easier in later releases.
 
 ## License
 
