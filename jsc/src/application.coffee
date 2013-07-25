@@ -11,3 +11,5 @@ cover = covers[Math.floor(Math.random() * covers.length)]
 $(document).ready ->
   $("img.cover-image").attr "src", cover[0]
   $("p.cover-caption").html cover[1]
+
+  $(".blog article").fitVids()

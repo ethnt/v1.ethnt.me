@@ -7,7 +7,8 @@
 
   $(document).ready(function() {
     $("img.cover-image").attr("src", cover[0]);
-    return $("p.cover-caption").html(cover[1]);
+    $("p.cover-caption").html(cover[1]);
+    return $(".blog article").fitVids();
   });
 
 }).call(this);
