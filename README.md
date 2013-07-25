@@ -4,12 +4,6 @@
 
 This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
-## To-Do
-
-- Pagination in blogs
-- Fix Symbolset webfonts (broken when I added them to `.gitignore`)
-- Make it responsive
-
 ## Usage
 
 First, you need a copy of this repository. Then, install the dependencies.
@@ -37,6 +31,10 @@ $ bundle exec push theme
 ```
 
 Publish your site, and you're set!
+
+### Navigation
+
+If you name your page "Index", it will not be included in the navigation. This is so there is only one link to the home/index page in the header, the site title.
 
 ### Meta
 

@@ -12,7 +12,7 @@ task :zip do
   FileUtils.rm(theme) if File.exist?(theme)
 
   Zip::ZipFile.open(theme, Zip::ZipFile::CREATE) do |zip|
-    Dir.glob("**/*.{html,css,js,png,jpg,gif,eot,svg,ttf,woff").each do |path|
+    Dir.glob("**/*.{html,css,js,png,jpg,gif").each do |path|
       zip.add(path, File.join(File.dirname(__FILE__), path))
     end
   end
