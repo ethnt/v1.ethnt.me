@@ -18,7 +18,11 @@
 */
 
 @media handheld, only screen and (max-width: 767px) { /* Handheld devices. */
-
+	#contain > header {
+		aside, nav {
+			@include span-columns(12 omega, 12);
+		}
+	}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) { /* iPhone 4 */
@@ -112,10 +116,23 @@ strong {
 
 	aside {
 		@include span-columns(4, 12);
+
+		@media (max-width: 767px) {
+			@include span-columns(12 omega, 12);
+		}
 	}
 
 	nav {
 		@include span-columns(8 omega, 12);
+
+		@media (max-width: 767px) {
+			@include span-columns(12 omega, 12);
+
+			ul {
+				float: left !important;
+				margin-top: 0.5em;
+			}
+		}
 
 		font-size: 0.9em;
 
@@ -148,6 +165,18 @@ strong {
 		aside {
 			@include span-columns(3, 12);
 
+			@media (max-width: 767px) {
+				@include span-columns(12 omega, 12);
+
+				figure {
+					display: none;
+				}
+
+				ul li {
+					display: inline;
+				}
+			}
+
 			figure img {
 				max-width: 75%;
 			}
@@ -163,6 +192,10 @@ strong {
 
 		section {
 			@include span-columns(9 omega, 12);
+
+			@media (max-width: 767px) {
+				@include span-columns(12 omega, 12);
+			}
 		}
 	}
 
@@ -174,6 +207,11 @@ strong {
 		.inner {
 			@include span-columns(9 omega, 12);
 			@include suffix(3);
+
+			@media (max-width: 767px) {
+				@include span-columns(12 omega, 12);
+				@include suffix(0);
+			}
 		}
 
 		.inner > header {
@@ -235,10 +273,27 @@ strong {
 
 		section {
 			@include span-columns(6, 12);
+
+			@media (max-width: 767px) {
+				@include span-columns(12 omega, 12);
+
+				p + p {
+					margin-top: 0.5em !important;
+				}
+			}
 		}
 
 		nav {
 			@include span-columns(6 omega, 12);
+
+			@media (max-width: 767px) {
+				@include span-columns(12 omega, 12);
+
+				ul {
+					float: left !important;
+					margin-top: 1.75em;
+				}
+			}
 
 			font-size: 1.25em;
 
