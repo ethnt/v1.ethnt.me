@@ -1,8 +1,5 @@
 {% capture content %}
-	<header>
-		<h3>{{ title }}</h3>
-	</header>
-	{% for current in posts %}
+  {% for current in posts %}
 		{% include 'includes/post' %}
 	{% endfor %}
 {% endcapture %}
