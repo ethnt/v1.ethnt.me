@@ -240,6 +240,14 @@ strong {
 				font-style: italic;
 				margin-top: 1.75em;
 
+				a {
+					color: darken($dark-grey, 15%);
+
+					&:hover {
+						color: $green;
+					}
+				}
+
 				ul li {
 					display: inline-block;
 
