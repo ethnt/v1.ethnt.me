@@ -31,7 +31,7 @@
 					<nav>
 						<ul>
 							{% for page in site.pages %}
-							{% unless page.title == 'Index' %}
+							{% unless page.title == 'Home' %}
 							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 							{% endunless %}
 							{% endfor %}
