@@ -50,6 +50,14 @@ a {
 	}
 }
 
+blockquote {
+	border-left: 5px solid $grey;
+	color: darken($dark-grey, 30%);
+	font-style: italic;
+	margin-bottom: 1em;
+	padding-left: 1em;
+}
+
 em {
 	font-style: italic;
 }
