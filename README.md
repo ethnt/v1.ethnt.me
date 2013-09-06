@@ -34,7 +34,7 @@ Publish your site, and you're set!
 
 ### Navigation
 
-If you name your page "Index", it will not be included in the navigation. This is so there is only one link to the home/index page in the header, the site title.
+If you name your page "Home", it will not be included in the navigation. This is so there is only one link to the home/index page in the header, the site title.
 
 ### Meta
 
