@@ -1,4 +1,10 @@
+// Ethan Turkeltaub
+//   file: css/src/application.css
+
 @import "lib/base"
+
+
+// Universal
 
 body
   background: $base
@@ -13,5 +19,196 @@ a
   &:hover
     color: $green
 
+blockquote
+  border-left: 5px solid $dark-grey
+  color: darken($dark-grey, 30%)
+  font-style: italic
+  margin-bottom: 1em
+  padding-left: 1em
+
+em
+  font-style: italic
+
+figure
+  a
+    border: none
+
+  figcaption
+    color: $dark-grey
+    font-style: italic
+
+h1, h2, h3, h4, h5, h6
+  font-family: $sans-serif
+  font-weight: border-left
+  text-transform: uppercase
+
 img
   max-width: 100%
+
+li
+  p + p
+    margin: 0
+
+  & + li
+    margin-top: 1.25em
+
+p + p
+  margin-top: 1.75em
+
+strong
+  font-weight: bold
+
+
+// Header
+
+#contain > header
+  background: $grey
+  padding: 1em 0
+
+  .inner
+    +container
+
+  a
+    border: none
+
+  aside
+    +span-columns(4, 12)
+
+  nav
+    +span-columns(8 omega, 12)
+
+    font-size: 0.9em
+
+    ul
+      float: right
+
+      li
+        display: inline-block
+
+        & + li
+          margin-top: 0
+          padding-left: 1.25em
+
+
+// Main
+
+main
+  .page
+    .section
+      +container
+
+      margin-bottom: 2em
+      margin-top: 2em
+
+      aside
+        +span-columns(3, 12)
+
+        figure img
+          max-width: 75%
+
+        ul li
+          font-size: 0.9em
+
+          & + li
+            margin-top
+
+      section
+        +span-columns(9 omega, 12)
+
+  .blog
+    +container
+
+    margin: 2em auto
+
+    .inner
+      +span-columns(9 omega, 12)
+      +suffix(3)
+
+      & > header
+        border-bottom: 1px solid $grey
+        font-style: italic
+        margin-bottom: 3em
+        padding-bottom: 0.5
+
+        span
+          font-style: normal
+
+    h2
+      font-size: 1.5em
+
+    article
+      & + article
+        border-top: 1px solid $grey
+        margin-top: 4em
+        padding-top: 4em
+
+      header
+        margin-bottom: 1.75em
+
+      footer
+        color: $dark-grey
+        font-size: 0.9em
+        font-style: italic
+        margin-top: 1.75em
+
+        a
+          color: darken($dark-grey, 15%)
+
+          &:hover
+            color: $green
+
+        ul li
+          display: inline-block
+
+          & + li
+            margin-top: 0
+
+
+// Footer
+
+#contain > footer
+  border-top: 1px solid $grey
+  padding: 2em 0 4em
+  margin-top: 6em
+
+  .inner
+    +container
+
+  p
+    font-size: 0.9em
+
+    span
+      color: $dark-grey
+
+      a
+        color: $dark-grey
+
+  section
+    +span-columns(6, 12)
+
+  nav
+    +span-columns(6 omega, 12)
+
+    font-size: 1.25em
+
+    a
+      border: none
+
+    ul
+      float: right
+
+      li
+        display: inline-block
+
+        & + li
+          margin-left: 0.25em
+          margin-top: 0
+
+
+// Vendored
+
+.fluid-width-video-wrapper
+  margin: 1.75em 0
+
+.wf-loading .webfont
+  visibility: hidden
