@@ -1,7 +1,7 @@
 {% capture tags %}
-    {% for tag in current.taxonomy.tags %}
-	    <a href="{{ tag.url }}">#{{ tag.value }}</a>
-    {% endfor %}
+	{% for tag in current.taxonomy.tags %}
+		<a href="{{ tag.url }}">#{{ tag.value }}</a>
+	{% endfor %}
 {% endcapture %}
 
 <article>
