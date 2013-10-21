@@ -200,21 +200,35 @@ header.universal a {
   color: #444444;
 }
 /* line 97, src/application.sass */
+header.universal a:hover {
+  color: #458366;
+}
+/* line 100, src/application.sass */
 header.universal h1 {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 100, src/application.sass */
+@media (max-width: 480px) {
+  /* line 100, src/application.sass */
+  header.universal h1 {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
+/* line 106, src/application.sass */
 header.universal li {
   display: inline-block;
 }
-/* line 103, src/application.sass */
+/* line 109, src/application.sass */
 header.universal li + li {
   margin-left: 1.25em;
 }
-/* line 106, src/application.sass */
+/* line 112, src/application.sass */
 header.universal nav {
   width: 74.46809%;
   float: right;
@@ -222,18 +236,36 @@ header.universal nav {
   *margin-left: -1em;
   display: inline;
 }
-/* line 109, src/application.sass */
-header.universal ul {
+@media (max-width: 480px) {
+  /* line 112, src/application.sass */
+  header.universal nav {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  /* line 118, src/application.sass */
+  header.universal nav ul {
+    float: left !important;
+  }
+  /* line 121, src/application.sass */
+  header.universal nav li:first-child {
+    padding-left: 0;
+  }
+}
+/* line 124, src/application.sass */
+header.universal nav ul {
   float: right;
   font-size: 0.9em;
 }
 
-/* line 116, src/application.sass */
+/* line 131, src/application.sass */
 main {
   margin: 2em 0;
 }
 
-/* line 122, src/application.sass */
+/* line 137, src/application.sass */
 .one-column {
   *zoom: 1;
   max-width: 47em;
@@ -250,7 +282,7 @@ main {
   clear: both;
 }
 
-/* line 125, src/application.sass */
+/* line 140, src/application.sass */
 .two-columns .section {
   *zoom: 1;
   max-width: 47em;
@@ -266,40 +298,54 @@ main {
   display: table;
   clear: both;
 }
-/* line 128, src/application.sass */
+/* line 143, src/application.sass */
 .two-columns .section + .section {
   margin-top: 3em;
 }
-/* line 131, src/application.sass */
+/* line 146, src/application.sass */
 .two-columns .section aside {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 134, src/application.sass */
+@media (max-width: 480px) {
+  /* line 146, src/application.sass */
+  .two-columns .section aside {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  /* line 152, src/application.sass */
+  .two-columns .section aside figure img {
+    display: none;
+  }
+}
+/* line 155, src/application.sass */
 .two-columns .section aside figure img {
   max-width: 75%;
 }
-/* line 137, src/application.sass */
+/* line 158, src/application.sass */
 .two-columns .section aside ul li {
   display: inline-block;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 142, src/application.sass */
+/* line 163, src/application.sass */
 .two-columns .section aside ul li + li {
   margin-left: 0.25em;
 }
-/* line 145, src/application.sass */
+/* line 166, src/application.sass */
 .two-columns .section aside ul li a {
   color: #d1d1c3;
 }
-/* line 148, src/application.sass */
+/* line 169, src/application.sass */
 .two-columns .section aside ul li a:hover {
   color: #458366;
 }
-/* line 151, src/application.sass */
+/* line 172, src/application.sass */
 .two-columns .section section {
   width: 74.46809%;
   float: right;
@@ -307,8 +353,18 @@ main {
   *margin-left: -1em;
   display: inline;
 }
+@media (max-width: 480px) {
+  /* line 172, src/application.sass */
+  .two-columns .section section {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
 
-/* line 154, src/application.sass */
+/* line 178, src/application.sass */
 .posts {
   *zoom: 1;
   max-width: 47em;
@@ -324,73 +380,73 @@ main {
   display: table;
   clear: both;
 }
-/* line 157, src/application.sass */
+/* line 181, src/application.sass */
 .posts > header {
   border-bottom: 1px solid #f2f2ee;
   margin-bottom: 3rem;
   padding-bottom: 0.5rem;
 }
-/* line 162, src/application.sass */
+/* line 186, src/application.sass */
 .posts > header span {
   font-style: italic;
 }
-/* line 166, src/application.sass */
+/* line 190, src/application.sass */
 .posts article + article {
   margin-top: 8em;
 }
-/* line 169, src/application.sass */
+/* line 193, src/application.sass */
 .posts article > header {
   margin-bottom: 1rem;
 }
-/* line 172, src/application.sass */
+/* line 196, src/application.sass */
 .posts article > footer {
   margin-top: 1.75em;
 }
-/* line 175, src/application.sass */
+/* line 199, src/application.sass */
 .posts article h2 {
   font-size: 1.45em;
 }
-/* line 178, src/application.sass */
+/* line 202, src/application.sass */
 .posts article h2 a {
   color: #444444;
 }
-/* line 181, src/application.sass */
+/* line 205, src/application.sass */
 .posts article h2 a:hover {
   color: #458366;
 }
-/* line 184, src/application.sass */
+/* line 208, src/application.sass */
 .posts article blockquote, .posts article figure, .posts article ul, .posts article ol {
   margin: 2em 0;
 }
-/* line 187, src/application.sass */
+/* line 211, src/application.sass */
 .posts article blockquote {
   border-left: 5px solid #f2f2ee;
   padding-left: 1em;
 }
-/* line 191, src/application.sass */
+/* line 215, src/application.sass */
 .posts article blockquote footer {
   margin-top: 1em;
 }
-/* line 194, src/application.sass */
+/* line 218, src/application.sass */
 .posts article footer {
   color: #d1d1c3;
   font-style: italic;
 }
-/* line 198, src/application.sass */
+/* line 222, src/application.sass */
 .posts article footer a {
   color: #d1d1c3;
 }
-/* line 201, src/application.sass */
+/* line 225, src/application.sass */
 .posts article footer a:hover {
   color: #bbbba6;
 }
-/* line 204, src/application.sass */
+/* line 228, src/application.sass */
 .posts article footer span {
   font-style: normal;
   font-size: 0.9em;
 }
 
-/* line 211, src/application.sass */
+/* line 235, src/application.sass */
 footer.universal {
   border-top: 1px solid #f2f2ee;
   color: #d1d1c3;
@@ -398,26 +454,26 @@ footer.universal {
   margin-top: 6em;
   padding-top: 2em;
 }
-/* line 218, src/application.sass */
+/* line 242, src/application.sass */
 footer.universal a {
   color: #d1d1c3;
 }
-/* line 221, src/application.sass */
+/* line 245, src/application.sass */
 footer.universal a:hover {
   color: #458366;
 }
-/* line 224, src/application.sass */
+/* line 248, src/application.sass */
 footer.universal p {
   font-size: 0.9em;
 }
-/* line 227, src/application.sass */
+/* line 251, src/application.sass */
 footer.universal section {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 230, src/application.sass */
+/* line 254, src/application.sass */
 footer.universal nav {
   width: 48.93617%;
   float: right;
@@ -425,11 +481,11 @@ footer.universal nav {
   *margin-left: -1em;
   display: inline;
 }
-/* line 233, src/application.sass */
+/* line 257, src/application.sass */
 footer.universal nav ul {
   float: right;
 }
-/* line 236, src/application.sass */
+/* line 260, src/application.sass */
 footer.universal nav ul li {
   display: inline-block;
   list-style-type: none;

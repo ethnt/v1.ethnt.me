@@ -94,8 +94,14 @@ header.universal
   a
     color: $text
 
+    &:hover
+      color: darken($sea-foam, 10%)
+
   h1
     +span-columns(3, 12)
+
+    @media (max-width: $tablet-small)
+      +span-columns(12 omega, 12)
 
   li
     display: inline-block
@@ -106,9 +112,18 @@ header.universal
   nav
     +span-columns(9 omega, 12)
 
-  ul
-    float: right
-    font-size: 0.9em
+    @media (max-width: $tablet-small)
+      +span-columns(12 omega, 12)
+
+      ul
+        float: left !important
+
+      li:first-child
+        padding-left: 0
+
+    ul
+      float: right
+      font-size: 0.9em
 
 
 // main
@@ -131,6 +146,12 @@ main
   aside
     +span-columns(3, 12)
 
+    @media (max-width: $tablet-small)
+      +span-columns(12 omega, 12)
+
+      figure img
+        display: none
+
     figure img
       max-width: 75%
 
@@ -150,6 +171,9 @@ main
 
   section
     +span-columns(9 omega, 12)
+
+    @media (max-width: $tablet-small)
+      +span-columns(12 omega, 12)
 
 .posts
   +container
