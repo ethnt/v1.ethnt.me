@@ -1,6 +1,6 @@
 # ethnt.me
 
-![ethnt.me](http://f.cl.ly/items/1m2Z1p2R1v3W2108350v/Screen%20Shot%202013-07-14%20at%209.26.57%20PM.png)
+![ethnt.me](https://f.cloud.github.com/assets/137037/1369613/2bb5e1ac-39f9-11e3-9ab7-b72977ec7743.png)
 
 This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
@@ -27,7 +27,7 @@ $ bundle exec siteleaf server
 If you're satisfied, push the theme to your site.
 
 ```
-$ bundle exec push theme
+$ bundle exec siteleaf push theme
 ```
 
 Publish your site, and you're set!
@@ -42,8 +42,9 @@ There are several pieces of metadata that you can add to the site to configure t
 
 Key            | Description
 ---------------|------
-`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Futura PT](https://typekit.com/fonts/futura-pt) and [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro).
+`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Adelle Sans](https://typekit.com/fonts/adelle-sans) and [Chaparral Pro](https://typekit.com/fonts/chaparral-pro).
 `analytics_id` | Your Google Analytics ID.
+`mixpanel_id`  | Your Mixpanel ID.
 `twitter`      | Your Twitter username.
 `github`       | Your GitHub username.
 `dribbble`     | Your Dribbble username.
