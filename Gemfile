@@ -11,6 +11,7 @@ gem 'racksh'
 gem 'guard-compass'
 gem 'guard-coffeescript'
 
+gem 'compass-normalize'
 gem 'susy'
 
 gem 'rubyzip', require: 'zip/zip'

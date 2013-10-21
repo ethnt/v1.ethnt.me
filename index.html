@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+
+		<meta name="description" content="{{ site.meta.description }}">
+
+		<title>Ethan Turkeltaub</title>
+
+		<link rel="icon" type="image/png" href="/img/favicon.png">
+				<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+				<link type="application/rss+xml" rel="alternate" title="{{ site.title }}" href="{{ site.feed_url }}">
+
+		<link href="/css/application.css" rel="stylesheet">
+		<link href="/webfonts/ss-social-circle/ss-social-circle.css" rel="stylesheet">
+
+		<script src="//use.typekit.net/lux8yqy.js"></script>
+		<script>
+			try {
+				Typekit.load();
+			} catch(e) {}
+		</script>
+	</head>
+	<body>
+		<header class="universal" role="banner">
+			<div class="contain">
+				<h1><a href="/">{{ site.title }}</a></h1>
+				<nav>
+					<ul>
+						{% for page in site.pages %}
+							{% unless page.title == 'Home' %}
+								<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+							{% endunless %}
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main role="main">
+			<!-- <div class="one-column">
+				<figure>
+					<img src="http://ethnt.me.s3-website-us-east-1.amazonaws.com/golden-gate-bridge.jpg">
+					<figcaption>
+						<p>The Golden Gate Bridge.</p>
+					</figcaption>
+				</figure>
+			</div> -->
+			<!-- <div class="two-columns">
+				<div class="section">
+					<aside>
+						<figure>
+							<img src="https://pbs.twimg.com/profile_images/378800000593182616/59d62ba86d7a498f096a29295eff5f3a.jpeg">
+						</figure>
+					</aside>
+					<section>
+						<h3>Hi, I'm Ethan, and a student and web developer.</h3>
+						<p>I&rsquo;m Ethan, an eighteen-year-old web developer and computer science student at <a href="http://www.marist.edu">Marist College</a> in Poughkeepsie, New York. I&rsquo;ve been making web products for a few years now — since the summer before my junior year of high school, I&rsquo;ve been a technology intern at <a href="http://fanzter.com">Fanzter</a>, a small startup in Unionville, Connecticut. For my senior year capstone project, I also created <a href="https://github.com/noted/noted">Noted</a>, a web application to help students organize and share their research projects. Currently, I&rsquo;m helping the <a href="http://clubs.marist.edu/sga/">Marist Student Government Association</a> redevelop their club management system to handle membership, payments, and other activities.</p>
+								<p>Though I&rsquo;m a little busy, feel free to <a href="https://s3.amazonaws.com/ethnt.me/Re%CC%81sume%CC%81.pdf">check out my résumé</a> and <a href="mailto:hi@ethnt.me">email me</a> about any of your projects — I&rsquo;d certainly love to help out, but if I&rsquo;m unable to, I&rsquo;d be more than happy to point you to someone that would do a great job for you.</p>
+					</section>
+				</div>
+				<div class="section">
+					<aside>
+						<h4>Experience</h4>
+					</aside>
+					<section>
+						<dl>
+							<dt><dfn>Marist College Student Government Association</dfn></dt>
+							<dd>Web developer</dd>
+							<dd><em>Sept. 2013 &ndash; present</em></dd>
+						</dl>
+						<dl>
+							<dt><dfn>Fanzter</dfn></dt>
+							<dd>Technology intern</dd>
+							<dd><em>Jun. 2011 &ndash; present</em></dd>
+						</dl>
+						<dl>
+							<dt><dfn>Noted</dfn></dt>
+							<dd>Creator, web developer</dd>
+							<dd><em>Sept. 2012 &ndash; Sept. 2013</em></dd>
+						</dl>
+					</section>
+				</div>
+				<div class="section">
+					<aside>
+						<h4>Education</h4>
+					</aside>
+					<section>
+						<dl>
+							<dt><dfn>Marist College</dfn></dt>
+							<dd>Computer Science</dd>
+							<dd><em>Aug. 2013 &ndash; present</em></dd>
+						</dl>
+					</section>
+				</div>
+			</div> -->
+			<!-- <div class="posts">
+				<header>
+					<h4>Blog</h4>
+				</header>
+				<article>
+					<header>
+						<h2><a href="#">Sagan Ipsum</a></h2>
+					</header>
+					<p>Rich in mystery hundreds of thousands galaxies. Venture rich in mystery great turbulent clouds prime number, of brilliant syntheses Jean-François Champollion. Bits of moving fluff trillion citizens of distant epochs the ash of stellar alchemy circumnavigated rich in heavy atoms, realm of the galaxies great turbulent clouds a billion trillion Drake Equation rich in mystery, star stuff harvesting star light, extraplanetary take root and flourish, star stuff harvesting star light intelligent beings corpus callosum across the centuries, emerged into consciousness a still more glorious dawn awaits, Sea of Tranquility. Cosmic ocean hearts of the stars, gathered by gravity extraordinary claims require extraordinary evidence trillion star stuff harvesting star light intelligent beings.</p>
+					<p>
+						<figure>
+							<img src="http://ethnt.me.s3-website-us-east-1.amazonaws.com/seine.jpg">
+							<figcaption>
+								<p>The Seine River in Paris.</p>
+							</figcaption>
+						</figure>
+					</p>
+					<p>Rich in mystery hundreds of thousands galaxies. Venture rich in mystery great turbulent clouds prime number, of brilliant syntheses Jean-François Champollion. Bits of moving fluff trillion citizens of distant epochs the ash of stellar alchemy circumnavigated rich in heavy atoms, realm of the galaxies great turbulent clouds a billion trillion Drake Equation rich in mystery, star stuff harvesting star light, extraplanetary take root and flourish, star stuff harvesting star light intelligent beings corpus callosum across the centuries, emerged into consciousness a still more glorious dawn awaits, Sea of Tranquility. Cosmic ocean hearts of the stars, gathered by gravity extraordinary claims require extraordinary evidence trillion star stuff harvesting star light intelligent beings.</p>
+					<blockquote>
+						<p>You live and you learn. At any rate, you live.</p>
+						<footer>&mdash; Douglas Adams</footer>
+					</blockquote>
+					<ul>
+						<li>This is an unordered list item.</li>
+						<li>This is an unordered list item.</li>
+						<li>This is an unordered list item.</li>
+						<li>This is an unordered list item.</li>
+					</ul>
+					<ol>
+						<li>This is an ordered list item.</li>
+						<li>This is an ordered list item.</li>
+						<li>This is an ordered list item.</li>
+						<li>This is an ordered list item.</li>
+					</ol>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">Uncertainty</a></h2>
+					</header>
+					<p>Like hundreds of thousands of teenagers, I&rsquo;m in limbo &mdash; I&rsquo;m halfway through the summer between the end of high school and the beginning of university. I have no idea what you&rsquo;d call us, really. We&rsquo;re certainly not high schoolers, that ended when we got our diplomas. And yet, we&rsquo;re not college students either, not really &mdash; we haven&rsquo;t started our first semester yet. But what can be said about all of us is this: we have absolutely, positively no idea what we&rsquo;re doing. And we have no idea what lies ahead.</p>
+					<p>This is a new concept for most of us. Generally, we&rsquo;ve been following the basic path from kindergarten all the way up through high school. Year in and year out it&rsquo;s the same people and same experiences. But this is different &mdash; it&rsquo;ll be a whole new <em>lifestyle</em> for us, one we cannot prepare for nor predict.
+					That&rsquo;s not to say people haven&rsquo;t <em>tried</em> to prepare us for what lies ahead. Parents, teachers, other students, and even the media have distorted our perception of what college really is. Perhaps the only way to figure out what college is to each of us is to experience it for ourselves.</p>
+					<p>This is a problem for me. I&rsquo;m the kind of person that enjoys planning. If I know exactly what I&rsquo;m going to be doing, I&rsquo;m comfortable. But if I&rsquo;m improvising and making it up as I go along, it makes me incredible uncomfortable. For that reason, I&rsquo;m anxious about going off to college. I thrive on predictability &mdash; college is not predictable.</p>
+					<p>Part of this is my introversion &mdash; if I did get myself into a social situation that I didn&rsquo;t expect, I&rsquo;m not sure I would know how to handle it. College is all about being social and networking, and that&rsquo;s not one of my favourite things.</p>
+					<p>Another part is me being a programmer. I take problems, break them down into parts, and figure out a way to solve each of these parts in a step-by-step fashion. I often apply this logic to my everyday life, and especially to friendships and relationships. But the fact is, I don&rsquo;t know the problem, so I cannot create a solution.</p>
+					<p>The final piece of this is just worrying and anxiety. I think this is something we all feel at the moment. We don&rsquo;t know if we&rsquo;ll fit in, if we&rsquo;ll find friends, if we can keep up with work. We all have these basic worries, and these will go away in time.</p>
+					<p>What will college bring for me? Where will I stand at this time next year? Who will I have met? What will I have done? Who knows. The best thing I can do is learn to take things as they come and just deal with the uncertainty, with the unpredictability. I need to put away my anxieties and just enjoy it while it lasts. </p>
+					<p>They say college is the best time of your life &mdash; I don&rsquo;t know if I will be saying that in the future, but I certainly hope I will.</p>
+					<footer>
+						<p>July 26, 2013</p>
+					</footer>
+				</article>
+			</div> -->
+			{{ content }}
+		</main>
+		<footer class="universal" role="footer">
+			<div class="contain">
+				<section>
+					<p><a href="/">{{ site.title }}</a> fecit {{ site.date | date: "%Y" }}.</p>
+					<p>Source code for this site is available on <a href="https://github.com/eturk/ethnt.me">GitHub</a>.</p>
+				</section>
+				<nav>
+					<ul>
+						{% if site.feed_url %}<li><a href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>{% endif %}
+						{% if site.meta.twitter %}<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>{% endif %}
+						{% if site.meta.github %}<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>{% endif %}
+						{% if site.meta.dribbble %}<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>{% endif %}
+						{% if site.meta.instagram %}<li><a href="http://instagram.com/{{ site.meta.instagram }}"><i class="ss-icon">instagram</i></a></li>{% endif %}
+						{% if site.meta.rdio %}<li><a href="http://rdio.com/people/{{ site.meta.rdio }}"><i class="ss-icon">rdio</i></a></li>{% endif %}
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<script src="/webfonts/ss-social-circle/ss-social.js"></script>
+	</body>
+</html>

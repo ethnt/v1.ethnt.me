@@ -1,4 +1,211 @@
 // Ethan Turkeltaub
-//   file: css/src/application.css
+//   file: css/src/application.sass
 
-@import "lib/base"
+@import lib/base
+
+
+// universal
+
+body
+  background: $base
+  color: $text
+  font: 400 100%/1.75em $serif
+
+a
+  color: $sea-foam
+  text-decoration: none
+
+  &:hover
+    color: darken($sea-foam, 10%)
+
+dl
+  & + dl
+    margin-top: 1em
+
+  dfn
+    font-family: $sans-serif
+    font-weight: 600
+
+em
+  font-style: italic
+
+figure
+  figcaption
+    color: $grey
+    font-style: italic
+
+h1, h2, h3, h4, h5, h6
+  font-family: $sans-serif
+  font-weight: 700
+
+h1
+  font-size: 1em
+
+h2, h3, h4, h5, h6
+  margin-bottom: 0.5rem
+  margin-top: 0
+
+h2
+  font-size: 1.25em
+
+h3
+  font-size: 1.15em
+
+h4
+  font-size: 1.015em
+
+h5
+  font-size: 1em
+  text-transform: uppercase
+
+img
+  max-width: 100%
+
+p
+  margin: 0
+
+  & + p
+    margin-top: 1em
+
+strong
+  font-weight: 600
+
+li
+  padding-left: 0.5em
+
+ul li
+  list-style-type: disc
+
+ol li
+  list-style-type: decimal
+
+
+.contain
+  +container
+
+
+// header
+
+header.universal
+  background: $beige
+
+  padding: 1em 0
+
+  a
+    color: $text
+
+  h1
+    +span-columns(3, 12)
+
+  li
+    display: inline-block
+
+    & + li
+      margin-left: 1.25em
+
+  nav
+    +span-columns(9 omega, 12)
+
+  ul
+    float: right
+    font-size: 0.9em
+
+
+// main
+
+main
+  margin: 2em 0
+
+
+// sections
+
+.one-column
+  +container
+
+.two-columns .section
+  +container
+
+  & + .section
+    margin-top: 3em
+
+  aside
+    +span-columns(3, 12)
+
+    figure img
+      max-width: 75%
+
+  section
+    +span-columns(9 omega, 12)
+
+.posts
+  +container
+
+  & > header
+    border-bottom: 1px solid $light-grey
+    margin-bottom: 3rem
+    padding-bottom: 0.5rem
+
+  article
+    & + article
+      margin-top: 8em
+
+    & > header
+      margin-bottom: 1rem
+
+    & > footer
+      margin-top: 1.75em
+
+    h2
+      font-size: 1.45em
+
+      a
+        color: $text
+
+        &:hover
+          color: darken($sea-foam, 10%)
+
+    blockquote, figure, ul, ol
+      margin: 2em 0
+
+    blockquote
+      border-left: 5px solid $light-grey
+      padding-left: 1em
+
+      footer
+        margin-top: 1em
+
+    footer
+      color: $grey
+      font-style: italic
+
+
+// footer
+
+footer.universal
+  border-top: 1px solid $light-grey
+  color: $grey
+  margin-bottom: 4em
+  margin-top: 6em
+  padding-top: 2em
+
+  a
+    color: $grey
+
+    &:hover
+      color: darken($sea-foam, 10%)
+
+  p
+    font-size: 0.9em
+
+  section
+    +span-columns(6, 12)
+
+  nav
+    +span-columns(6 omega, 12)
+
+    ul
+      float: right
+
+      li
+        display: inline-block
+        list-style-type: none
