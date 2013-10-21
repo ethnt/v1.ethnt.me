@@ -134,6 +134,20 @@ main
     figure img
       max-width: 75%
 
+    ul li
+      display: inline-block
+      margin-left: 0
+      padding-left: 0
+
+      & + li
+        margin-left: 0.25em
+
+      a
+        color: $grey
+
+        &:hover
+          color: darken($sea-foam, 10%)
+
   section
     +span-columns(9 omega, 12)
 
@@ -144,6 +158,9 @@ main
     border-bottom: 1px solid $light-grey
     margin-bottom: 3rem
     padding-bottom: 0.5rem
+
+    span
+      font-style: italic
 
   article
     & + article
@@ -177,6 +194,16 @@ main
     footer
       color: $grey
       font-style: italic
+
+      a
+        color: $grey
+
+        &:hover
+          color: darken($grey, 10%)
+
+      span
+        font-style: normal
+        font-size: 0.9em
 
 
 // footer

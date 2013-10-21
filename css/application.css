@@ -97,7 +97,7 @@ em {
 
 /* line 33, src/application.sass */
 figure figcaption {
-  color: #dcdcd1;
+  color: #d1d1c3;
   font-style: italic;
 }
 
@@ -282,6 +282,24 @@ main {
   max-width: 75%;
 }
 /* line 137, src/application.sass */
+.two-columns .section aside ul li {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 142, src/application.sass */
+.two-columns .section aside ul li + li {
+  margin-left: 0.25em;
+}
+/* line 145, src/application.sass */
+.two-columns .section aside ul li a {
+  color: #d1d1c3;
+}
+/* line 148, src/application.sass */
+.two-columns .section aside ul li a:hover {
+  color: #458366;
+}
+/* line 151, src/application.sass */
 .two-columns .section section {
   width: 74.46809%;
   float: right;
@@ -290,7 +308,7 @@ main {
   display: inline;
 }
 
-/* line 140, src/application.sass */
+/* line 154, src/application.sass */
 .posts {
   *zoom: 1;
   max-width: 47em;
@@ -306,83 +324,100 @@ main {
   display: table;
   clear: both;
 }
-/* line 143, src/application.sass */
+/* line 157, src/application.sass */
 .posts > header {
   border-bottom: 1px solid #f2f2ee;
   margin-bottom: 3rem;
   padding-bottom: 0.5rem;
 }
-/* line 149, src/application.sass */
+/* line 162, src/application.sass */
+.posts > header span {
+  font-style: italic;
+}
+/* line 166, src/application.sass */
 .posts article + article {
   margin-top: 8em;
 }
-/* line 152, src/application.sass */
+/* line 169, src/application.sass */
 .posts article > header {
   margin-bottom: 1rem;
 }
-/* line 155, src/application.sass */
+/* line 172, src/application.sass */
 .posts article > footer {
   margin-top: 1.75em;
 }
-/* line 158, src/application.sass */
+/* line 175, src/application.sass */
 .posts article h2 {
   font-size: 1.45em;
 }
-/* line 161, src/application.sass */
+/* line 178, src/application.sass */
 .posts article h2 a {
   color: #444444;
 }
-/* line 164, src/application.sass */
+/* line 181, src/application.sass */
 .posts article h2 a:hover {
   color: #458366;
 }
-/* line 167, src/application.sass */
+/* line 184, src/application.sass */
 .posts article blockquote, .posts article figure, .posts article ul, .posts article ol {
   margin: 2em 0;
 }
-/* line 170, src/application.sass */
+/* line 187, src/application.sass */
 .posts article blockquote {
   border-left: 5px solid #f2f2ee;
   padding-left: 1em;
 }
-/* line 174, src/application.sass */
+/* line 191, src/application.sass */
 .posts article blockquote footer {
   margin-top: 1em;
 }
-/* line 177, src/application.sass */
+/* line 194, src/application.sass */
 .posts article footer {
-  color: #dcdcd1;
+  color: #d1d1c3;
   font-style: italic;
 }
+/* line 198, src/application.sass */
+.posts article footer a {
+  color: #d1d1c3;
+}
+/* line 201, src/application.sass */
+.posts article footer a:hover {
+  color: #bbbba6;
+}
+/* line 204, src/application.sass */
+.posts article footer span {
+  font-style: normal;
+  font-size: 0.9em;
+}
 
-/* line 184, src/application.sass */
+/* line 211, src/application.sass */
 footer.universal {
   border-top: 1px solid #f2f2ee;
-  color: #dcdcd1;
+  color: #d1d1c3;
   margin-bottom: 4em;
   margin-top: 6em;
   padding-top: 2em;
 }
-/* line 191, src/application.sass */
+/* line 218, src/application.sass */
 footer.universal a {
-  color: #dcdcd1;
+  color: #d1d1c3;
 }
-/* line 194, src/application.sass */
+/* line 221, src/application.sass */
 footer.universal a:hover {
   color: #458366;
 }
-/* line 197, src/application.sass */
+/* line 224, src/application.sass */
 footer.universal p {
   font-size: 0.9em;
 }
-/* line 200, src/application.sass */
+/* line 227, src/application.sass */
 footer.universal section {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline;
 }
-/* line 203, src/application.sass */
+/* line 230, src/application.sass */
 footer.universal nav {
   width: 48.93617%;
   float: right;
@@ -390,11 +425,11 @@ footer.universal nav {
   *margin-left: -1em;
   display: inline;
 }
-/* line 206, src/application.sass */
+/* line 233, src/application.sass */
 footer.universal nav ul {
   float: right;
 }
-/* line 209, src/application.sass */
+/* line 236, src/application.sass */
 footer.universal nav ul li {
   display: inline-block;
   list-style-type: none;
