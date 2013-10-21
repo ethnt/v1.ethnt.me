@@ -42,7 +42,7 @@ There are several pieces of metadata that you can add to the site to configure t
 
 Key            | Description
 ---------------|------
-`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Adelle Sans](https://typekit.com/fonts/adelle-sans) and [Chaparral Pro](https://typekit.com/fonts/chaparral-pro).
+`typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Adelle Sans](https://typekit.com/fonts/adelle-sans) and [Calluna](https://typekit.com/fonts/calluna).
 `analytics_id` | Your Google Analytics ID.
 `mixpanel_id`  | Your Mixpanel ID.
 `twitter`      | Your Twitter username.
