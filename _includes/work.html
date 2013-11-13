@@ -1,0 +1,13 @@
+<div class="section">
+	<aside>
+		<h4>{{ current.title }}</h4>
+		<ul>
+			{% for field in current.meta %}
+				<li><a href="{{ field.value }}"><i class="ss-icon">{{ field.key }}</i></a></li>
+			{% endfor %}
+		</ul>
+	</aside>
+	<section>
+		{{ current.body}}
+	</section>
+</div>
