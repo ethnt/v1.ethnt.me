@@ -184,7 +184,7 @@ main
     @media (max-width: $tablet-small)
       +span-columns(12 omega, 12)
 
-.posts
+.posts, .photos
   +container
 
   & > header
@@ -241,6 +241,16 @@ main
         font-style: normal
         font-size: 0.9em
 
+.photos
+  text-align: center
+
+  article header
+    margin-left: -10%
+    width: 120%
+
+    @media (max-width: 960px)
+      margin: 0 auto
+      width: 100%
 
 // footer
 

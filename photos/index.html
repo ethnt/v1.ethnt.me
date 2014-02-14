@@ -1,0 +1,7 @@
+{% capture content %}
+	{% for current in posts %}
+		{% include 'includes/photo' %}
+	{% endfor %}
+{% endcapture %}
+
+{% include 'layouts/photos' %}
