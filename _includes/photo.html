@@ -3,7 +3,7 @@
 		{% for asset in current.assets %}
 			<a href="{{ asset.url }}">
 				{% if asset.type == 'image' %}
-					<img src="{{asset.url}}">
+					<img class="unveil" src="/img/loading.png" data-src="{{asset.url}}">
 				{% elsif asset.type == 'audio' %}
 					<audio><source src="{{asset.url}}" type="{{asset.content_type}}"></audio>
 				{% elsif asset.type == 'video' %}
