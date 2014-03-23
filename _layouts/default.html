@@ -26,9 +26,7 @@
 				<nav>
 					<ul>
 						{% for page in site.pages %}
-							{% unless page.title == 'Home' %}
-								<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-							{% endunless %}
+							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 						{% endfor %}
 					</ul>
 				</nav>
