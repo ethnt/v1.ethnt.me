@@ -16,282 +16,101 @@ a
   text-decoration: none
 
   &:hover
-    color: darken($sea-foam, 10%)
-
-dl
-  & + dl
-    margin-top: 1em
-
-  dfn
-    font-family: $sans-serif
-    font-weight: 600
-
-    a
-      color: $text
-
-      &:hover
-        color: darken($sea-foam, 5%)
+    color: darken($sea-foam, 5%)
 
 em
   font-style: italic
 
-figure
-  figcaption
-    color: $grey
-    font-style: italic
-
 h1, h2, h3, h4, h5, h6
   font-family: $sans-serif
-  font-weight: 700
+  font-weight: 600
 
-h1
-  font-size: 1em
-
-h2, h3, h4, h5, h6
-  margin-bottom: 0.5rem
-  margin-top: 0
-
-h2
-  font-size: 1.25em
-
-h3
-  font-size: 1.15em
-
-h4
-  font-size: 1.015em
-
-h5
-  font-size: 1em
-  text-transform: uppercase
-
-hr
-  border: 0
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
-  height: 0
-  margin: 1.75rem 0
-
-img
-  max-width: 100%
-
-  &.circle
-    +border-radius(50%)
-
-  &.unveil
-    opacity: 0
-    transition: opacity 0.3s ease-in
-
-p
-  margin: 0
-
-  & + p
-    margin-top: 1em
+p + p
+  margin-top: 1.75em
 
 strong
   font-weight: 600
 
-li
-  padding-left: 0.5em
-
-ul li
-  list-style-type: disc
-
-ol li
-  list-style-type: decimal
-
-.contain
-  +container
-
 
 // header
 
-header.universal
-  background: $beige
-  padding: 1em 0
+header#header
+  +container
+
+  border-bottom: 1px solid $light-grey
+  font-family: $sans-serif
+  padding-bottom: 2em
+  padding-top: 2em
 
   a
     color: $text
 
     &:hover
-      color: darken($sea-foam, 10%)
+      color: $sea-foam
 
   h1
-    +span-columns(3, 12)
+    +span-columns(4, 12)
 
-    @media (max-width: $tablet-small)
-      +span-columns(12 omega, 12)
-
-  li
-    display: inline-block
-
-    & + li
-      margin-left: 1.25em
+    font-weight: 600
 
   nav
-    +span-columns(9 omega, 12)
-
-    @media (max-width: $tablet-small)
-      +span-columns(12 omega, 12)
-
-      ul
-        float: left !important
-
-      li:first-child
-        padding-left: 0
+    font-weight: 300
+    font-size: 0.9em
 
     ul
-      float: right
-      font-size: 0.9em
+      +span-columns(3, 12)
+
+      &:last-child
+        +suffix(2)
+        +omega
 
 
 // main
 
 main
-  margin: 2em 0
+  padding-bottom: 3em
+  padding-top: 3em
 
+  .row
+    +container
 
-// sections
+    @for $i from 1 through 24
+      .col-#{$i}
+        +span-columns($i, $total-columns)
+        @media (max-width: $tablet-small)
+          +span-columns(24, $total-columns)
+          // margin-bottom: 2em
+      .suffix-#{$i}
+        +suffix($i, $total-columns)
 
-.one-column
-  +container
+    .omega
+      +omega
 
-.two-columns .section
-  +container
+    & + .row
+      margin-top: 3em
 
-  & + .section
-    margin-top: 3em
+  .info-section
+    div
+      border-top: 1px solid $light-grey
+      padding-top: 1em
 
-  aside, section
-    border-top: 1px solid $light-grey
-    padding-top: 0.75em
-
-  aside
-    +span-columns(3, 12)
-
-    @media (max-width: $tablet-small)
-      +span-columns(12 omega, 12)
-
-      figure img
-        display: none
-
-    figure img
-      max-width: 75%
-
-    ul li
-      display: inline-block
-      margin-left: 0
-      padding-left: 0
-
-      & + li
-        margin-left: 0.25em
-
-      a
-        color: $grey
-
-        &:hover
-          color: darken($sea-foam, 10%)
-
-  section
-    +span-columns(9 omega, 12)
-
-    @media (max-width: $tablet-small)
-      +span-columns(12 omega, 12)
-
-.posts, .photos
-  +container
-
-  & > header
-    border-bottom: 1px solid $light-grey
-    margin-bottom: 3rem
-    padding-bottom: 0.5rem
-
-    span
-      font-style: italic
-
-  article
-    & + article
-      margin-top: 8em
-
-    & > header
-      margin-bottom: 1rem
-
-    & > footer
-      margin-top: 1.75em
-
-    h2
-      font-size: 1.45em
-
-      a
-        color: $text
-
-        &:hover
-          color: darken($sea-foam, 10%)
-
-    h3, h4, h5, h6
-      margin-top: 1.75rem
-
-    blockquote, figure, ul, ol
-      margin: 2em 0
-
-    blockquote
-      border-left: 5px solid $light-grey
-      padding-left: 1em
-
-      footer
+    dl
+      & + dl
         margin-top: 1em
 
-    footer
-      color: $grey
-      font-style: italic
+      dt
+        font-family: $sans-serif
 
-      a
-        color: $grey
 
-        &:hover
-          color: darken($grey, 10%)
 
-      span
-        font-style: normal
-        font-size: 0.9em
 
-.photos
-  text-align: center
 
-  article header
-    margin-left: -10%
-    width: 120%
-
-    @media (max-width: 960px)
-      margin: 0 auto
-      width: 100%
 
 // footer
 
-footer.universal
+footer
+  +container
+
   border-top: 1px solid $light-grey
-  color: $grey
-  margin-bottom: 4em
-  margin-top: 6em
+  padding-bottom: 3em
   padding-top: 2em
-
-  a
-    color: $grey
-
-    &:hover
-      color: darken($sea-foam, 10%)
-
-  p
-    font-size: 0.9em
-
-  section
-    +span-columns(6, 12)
-
-  nav
-    +span-columns(6 omega, 12)
-
-    ul
-      float: right
-
-      li
-        display: inline-block
-        list-style-type: none

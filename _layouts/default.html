@@ -20,39 +20,69 @@
 		{% include "includes/typekit" %}
 	</head>
 	<body>
-		<header class="universal" role="banner">
-			<div class="contain">
-				<h1><a href="/">{{ site.title }}</a></h1>
-				<nav>
-					<ul>
-						{% for page in site.pages %}
-							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-						{% endfor %}
-					</ul>
-				</nav>
-			</div>
+		<header id="header" role="banner">
+			<h1><a href="#">Ethan Turkeltaub</a></h1>
+			<nav>
+				<ul>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Photos</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">GitHub</a></li>
+					<li><a href="#">Dribbble</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main role="main">
-			{{ content }}
-		</main>
-		<footer class="universal" role="footer">
-			<div class="contain">
-				<section>
-					<p><a href="/">{{ site.title }}</a> fecit {{ site.date | date: "%Y" }}.</p>
-					<p>Source code for this site is available on <a href="https://github.com/eturk/ethnt.me">GitHub</a>.</p>
-				</section>
-				<nav>
-					<ul>
-						{% if site.feed_url %}<li><a href="{{ site.feed_url }}"><i class="ss-icon">rss</i></a></li>{% endif %}
-						{% if site.meta.twitter %}<li><a href="https://twitter.com/{{ site.meta.twitter }}"><i class="ss-icon">twitter</i></a></li>{% endif %}
-						{% if site.meta.github %}<li><a href="https://github.com/{{ site.meta.github }}"><i class="ss-icon">github</i></a></li>{% endif %}
-						{% if site.meta.dribbble %}<li><a href="http://dribbble.com/{{ site.meta.dribbble }}"><i class="ss-icon">dribbble</i></a></li>{% endif %}
-						{% if site.meta.instagram %}<li><a href="http://instagram.com/{{ site.meta.instagram }}"><i class="ss-icon">instagram</i></a></li>{% endif %}
-						{% if site.meta.rdio %}<li><a href="http://rdio.com/people/{{ site.meta.rdio }}"><i class="ss-icon">rdio</i></a></li>{% endif %}
-					</ul>
-				</nav>
+			<div class="row">
+				<p>Ethan Turkeltaub is currently a student at <a href="http://marist.edu">Marist College</a> pursuing a degree in computer science with a focus on software development, as well as minors in information systems and graphic design. He is also a intern-turned-CEO at <a href="http://fanzter.com">Fanzter</a>, helping them create <a href="https://gorollcall.com">Rollcall</a>, a tool to simplify updating your team on what you’re doing.</p>
+				<p>He also created <a href="http://getnoted.org">Noted</a>, a site to aid students organize and collaborate on academic research. A public beta will be available soon.</p>
 			</div>
+			<div class="row info-section">
+				<div class="col-4">
+					<h3>Experience</h3>
+				</div>
+				<div class="col-8 omega">
+					<dl>
+            <dt><dfn><a href="http://fanzter.com">Fanzter</a></dfn></dt>
+            <dd>Technology intern, web developer</dd>
+            <dd><em>Jun. 2011 &ndash; present</em></dd>
+	        </dl>
+	        <dl>
+	            <dt><dfn><a href="http://clubs.marist.edu/sga">Marist College Student Government Association</a></dfn></dt>
+	            <dd>Assistant Chief Information Officer</dd>
+	            <dd><em>Sept. 2013 &ndash; present</em></dd>
+	        </dl>
+	        <dl>
+	            <dt><dfn><a href="http://getnoted.org">Noted</a></dfn></dt>
+	            <dd>Creator, web developer</dd>
+	            <dd><em>Sept. 2012 &ndash; present</em></dd>
+	        </dl>
+	        <dl>
+	            <dt><dfn><a href="https://github.com/fhsav">Farmington High School</a></dfn></dt>
+	            <dd>Web developer</dd>
+	            <dd><em>Sept. 2009 &ndash; Jun. 2013</em></dd>
+	        </dl>
+				</div>
+				<div class="row info-section">
+					<div class="col-4">
+						<h3>Education</h3>
+					</div>
+					<div class="col-8 omega">
+						<dl>
+							<dt><dfn><a href="http://marist.edu">Marist College</a></dfn></dt>
+							<dd>Computer science (software development), graphic design, information systems</dd>
+							<dd><em>Aug. 2013 &ndash; present</em></dd>
+						</dl>
+					</div>
+			</div>
+		</main>
+		<footer id="footer" role="footer">
+			<p><a href="#">Ethan Turkeltaub</a> fecit 2014.</p>
 		</footer>
+
 		<script src="/jsc/lib/vendor/jquery.js"></script>
 		<script src="/jsc/lib/vendor/jquery.fitvids.js"></script>
 		<script src="/jsc/lib/vendor/jquery.unveil.js"></script>
