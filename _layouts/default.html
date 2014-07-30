@@ -21,66 +21,20 @@
 	</head>
 	<body>
 		<header id="header" role="banner">
-			<h1><a href="#">Ethan Turkeltaub</a></h1>
+			<h1><a href="/">{{ site.title }}</a></h1>
 			<nav>
 				<ul>
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Photos</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">GitHub</a></li>
-					<li><a href="#">Dribbble</a></li>
+					{% for page in site.pages %}
+						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					{% endfor %}
 				</ul>
 			</nav>
 		</header>
 		<main role="main">
-			<div class="row">
-				<p>Ethan Turkeltaub is currently a student at <a href="http://marist.edu">Marist College</a> pursuing a degree in computer science with a focus on software development, as well as minors in information systems and graphic design. He is also a intern-turned-CEO at <a href="http://fanzter.com">Fanzter</a>, helping them create <a href="https://gorollcall.com">Rollcall</a>, a tool to simplify updating your team on what you’re doing.</p>
-				<p>He also created <a href="http://getnoted.org">Noted</a>, a site to aid students organize and collaborate on academic research. A public beta will be available soon.</p>
-			</div>
-			<div class="row info-section">
-				<div class="col-4">
-					<h3>Experience</h3>
-				</div>
-				<div class="col-8 omega">
-					<dl>
-            <dt><dfn><a href="http://fanzter.com">Fanzter</a></dfn></dt>
-            <dd>Technology intern, web developer</dd>
-            <dd><em>Jun. 2011 &ndash; present</em></dd>
-	        </dl>
-	        <dl>
-	            <dt><dfn><a href="http://clubs.marist.edu/sga">Marist College Student Government Association</a></dfn></dt>
-	            <dd>Assistant Chief Information Officer</dd>
-	            <dd><em>Sept. 2013 &ndash; present</em></dd>
-	        </dl>
-	        <dl>
-	            <dt><dfn><a href="http://getnoted.org">Noted</a></dfn></dt>
-	            <dd>Creator, web developer</dd>
-	            <dd><em>Sept. 2012 &ndash; present</em></dd>
-	        </dl>
-	        <dl>
-	            <dt><dfn><a href="https://github.com/fhsav">Farmington High School</a></dfn></dt>
-	            <dd>Web developer</dd>
-	            <dd><em>Sept. 2009 &ndash; Jun. 2013</em></dd>
-	        </dl>
-				</div>
-				<div class="row info-section">
-					<div class="col-4">
-						<h3>Education</h3>
-					</div>
-					<div class="col-8 omega">
-						<dl>
-							<dt><dfn><a href="http://marist.edu">Marist College</a></dfn></dt>
-							<dd>Computer science (software development), graphic design, information systems</dd>
-							<dd><em>Aug. 2013 &ndash; present</em></dd>
-						</dl>
-					</div>
-			</div>
+			{{ content }}
 		</main>
 		<footer id="footer" role="footer">
-			<p><a href="#">Ethan Turkeltaub</a> fecit 2014.</p>
+			<p><a href="/">{{ site.title }}</a> fecit {{ site.date | date: "%Y" }}.</p>
 		</footer>
 
 		<script src="/jsc/lib/vendor/jquery.js"></script>

@@ -1,4 +1,4 @@
-<article>
+<!-- <article class="photo">
 	<header>
 		{% for asset in current.assets %}
 			<a href="{{ asset.url }}">
@@ -20,4 +20,23 @@
 			{{ current.date | date: '%B %d, %Y' }}
 		</p>
 	</footer>
-</article>
+</article> -->
+<figure class="photo">
+	{% for asset in current.assets %}
+		<a href="{{ asset.url }}">
+			{% if asset.type == 'image' %}
+				<img class="unveil" src="/img/loading.png" data-src="{{asset.url}}">
+			{% elsif asset.type == 'audio' %}
+				<audio><source src="{{asset.url}}" type="{{asset.content_type}}"></audio>
+			{% elsif asset.type == 'video' %}
+				<video><source src="{{asset.url}}" type="{{asset.content_type}}"></video>
+			{% elsif asset.type == 'other' %}
+				<a href="{{asset.url}}">Download {{asset.filename}}</a></li>
+			{% endif %}
+		</a>
+	{% endfor %}
+	<figcaption>
+		{{ current.body }}
+		<p>&mdash; {{ current.date | date: '%B %d, %Y' }}</p>
+	</figcaption>
+</figure>

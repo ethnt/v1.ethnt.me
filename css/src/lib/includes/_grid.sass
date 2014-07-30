@@ -12,3 +12,25 @@ $tablet-small: 480px
 $tablet-large: 768px
 $screen-small: 1024px
 $screen-large: 1280px
+
+.row
+  +container
+
+  padding: 0
+
+@for $i from 1 through $total-columns
+  .col-#{$i}
+    +span-columns($i, $total-columns)
+
+    @media (max-width: 660px)
+      +span-columns($total-columns, $total-columns)
+      +omega
+
+  .prefix-#{$i}
+    +prefix($i)
+
+  .suffix-#{$i}
+    +suffix($i)
+
+.omega
+  +omega

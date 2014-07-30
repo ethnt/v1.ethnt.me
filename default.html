@@ -1,13 +1,5 @@
 {% capture content %}
-	{% if meta.multisection %}
-		<div class="two-columns">
-			{{ body }}
-		</div>
-	{% else %}
-		<div class="one-column">
-			{{ body }}
-		</div>
-	{% endif %}
+	{{ body }}
 {% endcapture %}
 
 {% include 'layouts/default' %}
