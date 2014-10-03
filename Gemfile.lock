@@ -15,6 +15,7 @@ GEM
       sass (~> 3.1)
     compass-normalize (1.4.3)
       compass (>= 0.12.0)
+    cssmin (1.0.3)
     dotenv (0.9.0)
     execjs (2.0.2)
     ffi (1.9.0)
@@ -35,12 +36,19 @@ GEM
     guard-compass (1.0.0)
       compass (>= 0.10.5)
       guard (~> 2.0)
+    guard-jammit (1.0.1)
+      guard (>= 1.1.0)
+      jammit
     httmultiparty (0.3.10)
       httparty (>= 0.7.3)
       multipart-post
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
+    jammit (0.6.6)
+      cssmin (>= 1.0.3)
+      jsmin (>= 1.0.1)
+    jsmin (1.0.1)
     listen (2.1.1)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -85,6 +93,7 @@ DEPENDENCIES
   foreman
   guard-coffeescript
   guard-compass
+  guard-jammit
   rack
   racksh
   rake

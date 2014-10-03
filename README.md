@@ -49,17 +49,12 @@ $ bundle exec foreman start
 
 ### Meta
 
-There are several pieces of metadata that you can add to the site to configure the theme.
+There are a few pieces of metadata that you can add to the site to configure the theme.
 
 Key            | Description
 ---------------|------
 `typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Adelle Sans](https://typekit.com/fonts/adelle-sans) and [Calluna](https://typekit.com/fonts/calluna).
 `analytics_id` | Your Google Analytics ID.
-`twitter`      | Your Twitter username.
-`github`       | Your GitHub username.
-`dribbble`     | Your Dribbble username.
-`instagram`    | Your Instagram username.
-`rdio`         | Your Rdio username.
 
 ### Symbolset Icons
 

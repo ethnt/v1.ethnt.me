@@ -8,10 +8,11 @@ gem 'rack'
 gem 'siteleaf'
 gem 'racksh'
 
-gem 'guard-compass'
-gem 'guard-coffeescript'
-
 gem 'compass-normalize'
 gem 'susy'
+
+gem 'guard-compass'
+gem 'guard-coffeescript'
+gem 'guard-jammit'
 
 gem 'rubyzip', require: 'zip/zip'

@@ -1,0 +1,12 @@
+gzip_assets: off
+
+javascripts:
+  application:
+    - jsc/lib/vendor/jquery.js
+    - jsc/lib/vendor/jquery.unveil.js
+    - jsc/lib/vendor/jquery.fitvids.js
+    - jsc/application.js
+
+stylesheets:
+  application:
+    - css/application.css
