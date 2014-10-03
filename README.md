@@ -3,7 +3,7 @@
 ![ethnt.me](https://cloud.githubusercontent.com/assets/137037/4501592/c6c19fca-4aaf-11e4-8360-0ec7af4ec1f4.png)
 
 
-This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
+This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and file system organization) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
 ## Usage
 
@@ -19,13 +19,7 @@ Configure the theme to use your own site with the [Siteleaf CLI](https://github.
 $ bundle exec siteleaf config YOUR_DOMAIN
 ```
 
-To preview your site, run the local server then check out [http://localhost:9292](http://localhost:9292).
-
-```
-$ bundle exec siteleaf server
-```
-
-If you're satisfied, push the theme to your site.
+Then you can push the theme to your site.
 
 ```
 $ bundle exec siteleaf push theme
@@ -33,9 +27,25 @@ $ bundle exec siteleaf push theme
 
 Publish your site, and you're set!
 
-### Navigation
+### Development
 
-If you name your page "Home", it will not be included in the navigation. This is so there is only one link to the home/index page in the header, the site title.
+You can run the local server with:
+
+```
+$ bundle exec siteleaf server
+```
+
+Assets are compiled by Guard:
+
+```
+$ bundle exec guard
+```
+
+You can run both with Foreman:
+
+```
+$ bundle exec foreman start
+```
 
 ### Meta
 
@@ -45,7 +55,6 @@ Key            | Description
 ---------------|------
 `typekit_id`   | The ID of your Typekit Kit that you want to use with the theme. The theme uses [Adelle Sans](https://typekit.com/fonts/adelle-sans) and [Calluna](https://typekit.com/fonts/calluna).
 `analytics_id` | Your Google Analytics ID.
-`mixpanel_id`  | Your Mixpanel ID.
 `twitter`      | Your Twitter username.
 `github`       | Your GitHub username.
 `dribbble`     | Your Dribbble username.
