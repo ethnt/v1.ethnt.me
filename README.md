@@ -1,6 +1,7 @@
 # ethnt.me
 
-![ethnt.me](https://f.cloud.github.com/assets/137037/1369613/2bb5e1ac-39f9-11e3-9ab7-b72977ec7743.png)
+![ethnt.me](https://cloud.githubusercontent.com/assets/137037/4501592/c6c19fca-4aaf-11e4-8360-0ec7af4ec1f4.png)
+
 
 This is the [Siteleaf](http://siteleaf.com) theme for my website. You can use it if you like. A lot of the structural stuff (like the `Rakefile` and structure) are taken from [destroytoday/destroytoday.com](https://github.com/destroytoday/destroytoday.com).
 
