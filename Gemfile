@@ -11,6 +11,8 @@ gem 'racksh'
 gem 'compass-normalize'
 gem 'susy'
 
+gem 'scss-lint'
+
 gem 'guard-compass'
 gem 'guard-coffeescript'
 gem 'guard-jammit'
