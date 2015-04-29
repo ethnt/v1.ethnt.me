@@ -22,17 +22,25 @@
 		<header id="header" role="banner">
 			<h1><a href="/">{{ site.title }}</a></h1>
 			<nav>
-				<ul>
-					{% for page in site.pages %}
-						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-					{% endfor %}
-				</ul>
+				{% if site.pages.count > 1 %}
+					<ul>
+						{% for page in site.pages %}
+							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</nav>
 		</header>
 		<main role="main">
 			{{ content }}
 		</main>
 		<footer id="footer" role="footer">
+			<nav>
+				<ul>
+					<li><a href="https://twitter.com/{{ site.meta.twitter }}">Twitter</a></li>
+					<li><a href="https://github.com/{{ site.meta.github }}">GitHub</a></li>
+				</ul>
+			</nav>
 			<p><a href="/">{{ site.title }}</a> fecit {{ site.date | date: "%Y" }}.</p>
 		</footer>
 

@@ -1,5 +1,23 @@
 {% capture content %}
-	{{ body }}
+	{% for section in site.pages.profile.pages %}
+		<div class="section">
+			<header>
+				<h3>{{ section.title }}</h3>
+			</header>
+			<section>
+				{{ section.body }}
+				{% if section.pages.count > 0 %}
+					{% for subsection in section.pages %}
+						<dl>
+							<dt><dfn><a href="{{ subsection.meta.url }}">{{ subsection.title }}</a></dfn></dt>
+							<dd>{{ subsection.meta.position }}</dd>
+							<dd><em>{{ subsection.meta.time }}</em></dd>
+						</dl>
+					{% endfor %}
+				{% endif %}
+			</section>
+		</div>
+	{% endfor %}
 {% endcapture %}
 
 {% include 'layouts/default' %}

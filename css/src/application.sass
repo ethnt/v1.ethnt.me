@@ -168,14 +168,14 @@ article, figure.photo
     span
       font-style: normal
 
-.info-section
-  margin-top: 4em
+.section
+  margin-bottom: 4em
 
-  dl + dl
-    margin-top: 1em
+dl + dl
+  margin-top: 1em
 
-  dfn
-    font-weight: 600
+dfn
+  font-weight: 600
 
 
 footer#footer
@@ -184,3 +184,24 @@ footer#footer
   &:before
     color: $grey
     content: '\2014'
+
+  nav
+    // @include adjust-font-size-to(16px)
+
+    a
+      color: $grey
+      background-image: none
+
+      &:hover
+        color: $sea-foam
+
+    ul
+      margin: 0
+
+    li
+      display: inline-block
+      margin-left: 0
+      padding-left: 0
+
+      & + li
+        margin-left: 1em

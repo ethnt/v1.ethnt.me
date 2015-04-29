@@ -1,5 +1,5 @@
 .DS_Store
-.sass-cache/
+.sass-cache
 config.ru
-webfonts/
+webfonts
 theme.zip
